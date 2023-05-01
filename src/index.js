@@ -2,12 +2,29 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import AppHeader from './Branding/appHeader';
+import AppFooter from './Branding/appFooter';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const Routing = () => {
+  return (
+    <Router>
+      <AppHeader />
+      <Routes>
+        <Route exact path="/" element={<App/>} />
+      </Routes>
+      <AppFooter />
+    </Router>
+  )
+}
+
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <Routing />
   </React.StrictMode>
 );
 

@@ -13,15 +13,43 @@
   }
 }
 
+.App-main-container {
+  padding: 30px;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.App-main-container .p-card .p-card-content {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App-main-container .p-card {
+  background: #071426;
+  color: rgba(255, 255, 255, 0.87);
+  box-shadow: 0px 0px 20px 1px #0190d4d4;
+  border-radius: 100px;
+}
+
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-image: url('/public/vivid-blurred-colorful-wallpaper-background.jpg');
+  min-height: 78vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
   color: white;
+  background-size: 100vw;
+}
+
+.App-header-title {
+  font-size: xxx-large;
+  color: #071426;
+  font-weight: 600;
 }
 
 .App-link {
@@ -32,6 +60,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
