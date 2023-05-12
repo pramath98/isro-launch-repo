@@ -5,8 +5,8 @@ export default function AppHeader() {
         <>
 
             <div className='header-container'>
-                <img alt='logo' src='/isro-logo.png' className="header-logo" />
-                <span className='header-text'>
+                {/* <img alt='logo' src='/isro-logo.png' className="header-logo" /> */}
+                <span className='header-text text-textLightBlue'>
                     Satellite Launch Repository
                 </span>
             </div>

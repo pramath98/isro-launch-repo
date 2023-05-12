@@ -6,17 +6,19 @@ import AppHeader from './Branding/appHeader';
 import AppFooter from './Branding/appFooter';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LaunchersMain from './Launchers/launchersMain';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const Routing = () => {
   return (
     <Router>
-      <AppHeader />
+      {/* <AppHeader /> */}
       <Routes>
-        <Route exact path="/" element={<App/>} />
+        <Route exact path="/" element={<App />} />
+        <Route exact path="/launchers" element={<LaunchersMain />} />
       </Routes>
-      <AppFooter />
+      {/* <AppFooter /> */}
     </Router>
   )
 }
